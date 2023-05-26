@@ -22,19 +22,22 @@ order by 1,2;
 
 --looking at total cases vs population 
 --shows what percentage of population got covid 
+
 SELECT Location, date, total_cases, population, (total_cases/population)*100 as InfectionRate
 FROM `portfolioprojects-386315.Covid_Data.Covid_Deaths`
 where Location like '%States%' 
 order by 1,2;
 
 -- Looking at countries with highest infection rate compared to population for the United States
+
 SELECT Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
 From `portfolioprojects-386315.Covid_Data.Covid_Deaths`
 Where location like '%states%'
 Group by Location, Population
 order by PercentPopulationInfected desc;
 
--- showing Countries with Highest Death Count per Population 
+-- Showing Countries with Highest Death Count per Population 
+
 SELECT Location, MAX(total_deaths) as TotalDeathCount
 FROM `portfolioprojects-386315.Covid_Data.Covid_Deaths`
 where continent is not null 
@@ -59,7 +62,7 @@ where continent is not null
 --Group By date
 order by 1,2;
 
--- looking at Total population vs vacinnations
+-- looking at total population vs vacinnations
 
 SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
 , SUM(Cast(vac.new_vaccinations as int)) OVER (partition by dea.location order by dea.location, dea.date) as RollingPeopleVaccinated
