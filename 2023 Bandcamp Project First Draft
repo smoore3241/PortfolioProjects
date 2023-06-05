@@ -1,0 +1,1009 @@
+-- -- Narrowing down release type to see what's more popular 
+
+SELECT *  
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE Release_Type = "EP"
+;
+SELECT * 
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE Release_Type = "LP"
+;
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE Release_Type = "Single"
+;
+-- Selecting all releases based on location 
+-- sorting based on release date
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT"
+ORDER BY 4;
+
+SELECT *
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK"
+ORDER BY 4;
+
+-- Selecting Genres based on location 
+-- Atlanta By Genre
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLLATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS ATLOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "ATL" and Genre = "Other"
+ORDER BY 4;
+
+-- Boston by Genre
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSLATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type BOSREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Other"
+ORDER BY 4;
+
+-- Brooklyn by Genre
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKLATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BRKOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BRK" and Genre = "Other"
+ORDER BY 4;
+
+-- Chicago by Genre
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHICOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHICLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHILATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS CHIOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "CHI" and Genre = "Other"
+ORDER BY 4;
+
+-- Houston by Genres
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOURAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOURNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOULATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS HOUOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "HOU" and Genre = "Other"
+ORDER BY 4;
+
+-- LA by Genre 
+
+-- Boston by Genres
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "BOS" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LACOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LARAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LABLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LARNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LACLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LALATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type LAREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS LAOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "LA" and Genre = "Other"
+ORDER BY 4;
+
+-- Miami by Genres
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIACOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIARAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIABLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIARNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIACLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIALATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type MIAREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS MIAOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "MIA" and Genre = "Other"
+ORDER BY 4;
+
+-- Philadelphia by Genres
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS BOSACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLLATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type PHLREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PHLOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PHL" and Genre = "Other"
+ORDER BY 4;
+
+-- Portland by Genre
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTCOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTRAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTBLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTRNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTCLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTLATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type PORTREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS PORTOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "PORT" and Genre = "Other"
+ORDER BY 4;
+
+-- Seattle by Genre 
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAPUNK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Punk"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAROCK
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Rock"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAHIPHOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Hip Hop"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAECLECTRONIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Electronic"
+ORDER BY 4;
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEACOUNTRY
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Country"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEARAP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Rap"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEABLUES
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Blues"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEARNB
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "R&B"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAHOUSE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "House"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAJAZZ
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Jazz"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAACOUSTIC
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Acoustic"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAPOP
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Pop"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEACLASSICAL
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Classical"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEALATIN
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Latin"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type SEAREGGAE
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Reggae"
+ORDER BY 4;
+
+
+SELECT Artist_Name_, Location, Release_Date, Release_Name, Release_Type AS SEAOTHER
+FROM `portfolioprojects-386315.Band_Camp_Data.2023`
+WHERE location = "SEA" and Genre = "Other"
+ORDER BY 4;
