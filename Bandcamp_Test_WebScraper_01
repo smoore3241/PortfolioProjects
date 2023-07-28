@@ -1,0 +1,19 @@
+'''
+Here in this python code I'm testing out how to best scrape bandcamp's website,
+In order to find clean data regarding releases genres based on location.
+I have not found a solution yet since a releases genre is not 
+plainly displayed on bandcamp's launch pages for new releases based on location.
+The genre of a release is stored in the tags section of a release's launch page.
+So going forward I'm going to see if I'm able to scrape the metadata for Bandcamp to find a solution
+Until then, enjoy a little code that allows you to grab different aspects of 
+Bandcamp's new releases launch page for the United Kingdom 
+'''
+
+from bs4 import BeautifulSoup
+import requests 
+
+html_text = requests.get('https://bandcamp.com/tag/united-kingdom?tab=all_releases&s=date').text
+soup = BeautifulSoup(html_text, 'lxml')
+
+artwork = soup.find_all('div', class_ = 'art')
+info = soup.find_all('div',class_ = 'info')
