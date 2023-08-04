@@ -12,8 +12,19 @@ Bandcamp's new releases launch page for the United Kingdom
 from bs4 import BeautifulSoup
 import requests 
 
-html_text = requests.get('https://bandcamp.com/tag/united-kingdom?tab=all_releases&s=date').text
-soup = BeautifulSoup(html_text, 'lxml')
+UK = requests.get('https://bandcamp.com/tag/united-kingdom?tab=all_releases&s=date')
+DE = requests.get('https://bandcamp.com/tag/germany?tab=all_releases&s=date')
+CA = requests.get('https://bandcamp.com/tag/canada?tab=all_releases&s=date')
+FR = requests.get('https://bandcamp.com/tag/france?tab=all_releases&s=date')
+AUS = requests.get('https://bandcamp.com/tag/australia?tab=all_releases&s=date')
+ES = requests.get('https://bandcamp.com/tag/spain?tab=all_releases&s=date')
 
-artwork = soup.find_all('div', class_ = 'art')
-info = soup.find_all('div',class_ = 'info')
+soup = BeautifulSoup(UK.text,DE.text,CA.text,FR.text,AUS.text,ES.text,'html.parser')
+
+locations: list[vars] = [UK,DE,CA,FR,AUS,ES]
+
+genre = soup.find_all('div', class_ = 'ratio-1-1')
+release_date = soup.find_all('div', class_ = 'date') 
+print(f"Location: {locations}")
+print(f"Genre:{genre}")
+print(f"Release Date:{release_date}")
