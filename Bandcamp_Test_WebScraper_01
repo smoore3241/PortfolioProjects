@@ -21,8 +21,12 @@ ES = requests.get('https://bandcamp.com/tag/spain?tab=all_releases&s=date')
 
 soup = BeautifulSoup(UK.text,DE.text,CA.text,FR.text,AUS.text,ES.text,'html.parser')
 
-locations: list[vars] = [UK,DE,CA,FR,AUS,ES]
+file = open("Bandcamp_2023_EU_Data","w")
+writer = csv.writer(file)
 
+writer.writerow(["Location","Genre","Release Date"])
+
+locations: list[vars] = [UK,DE,CA,FR,AUS,ES]
 genre = soup.find_all('div', class_ = 'ratio-1-1')
 release_date = soup.find_all('div', class_ = 'date') 
 
